@@ -1,8 +1,10 @@
 function filterArray(numbers, value) {
-
-    for (let i = 0; i <= numbers; i++){
+    const quantityElements = numbers.length;
+    // console.log(quantityElements)
+    for (let i = 0; i <= quantityElements; i++){
         if (i > value) {
-           const maxArr = maxArr.push(numbers[i]);
+            console.log(i)
+           let maxArr = maxArr.push(numbers[i]);
             console.log(numbers[i])
       } 
     }
