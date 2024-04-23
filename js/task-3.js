@@ -6,7 +6,7 @@ function filterArray(numbers, value) {
             maxArr.push(numbers[i]);
         }
     }
-    console.table(maxArr);
+    //console.table(maxArr);
     return maxArr;
 }
 
