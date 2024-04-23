@@ -1,15 +1,15 @@
 function filterArray(numbers, value) {
     const quantityElements = numbers.length;
-    // console.log(quantityElements)
-    for (let i = 0; i <= quantityElements; i++){
-        if (i > value) {
-            console.log(i)
-           let maxArr = maxArr.push(numbers[i]);
-            console.log(numbers[i])
-      } 
+    const maxArr = [];
+    for (let i = 0; i <= quantityElements; i++) {
+        if (numbers[i] > value) {
+            maxArr.push(numbers[i]);
+        }
     }
+    console.table(maxArr);
     return maxArr;
 }
+
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
 console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
